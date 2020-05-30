@@ -1,6 +1,7 @@
 # Elasticsearch Snapshot backup samples
 
-the idea is to setup an Elasticsearch cluster with Docker. A specific docker-compose file has been created to set it up a Cluster with 3 nodes.
+The idea is to setup an Elasticsearch cluster with Docker. A specific docker-compose file has been created to set it up a Cluster with 3 nodes.
+
 Then you can play with the cluster and test what has been explained into the
 Tutorial on Medium.
 
@@ -32,7 +33,6 @@ in order to allow Elasticsearch backing it up the indices in an AWS S3 bucket.
 version: '2.2'
 services:
   es01:
-    #image: docker.elastic.co/elasticsearch/elasticsearch:7.6.2
     build: .
     container_name: es01
     environment:
@@ -61,7 +61,6 @@ This is the Elasticsearch base configuration file. In our example with are addin
 ```yml
 cluster.name: "docker-cluster"
 network.host: 0.0.0.0
-
 
 s3.client.default.endpoint: s3-eu-west-1.amazonaws.com
 ```

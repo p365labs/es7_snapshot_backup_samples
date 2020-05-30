@@ -1,7 +1,6 @@
 version: '2.2'
 services:
   es01:
-    #image: docker.elastic.co/elasticsearch/elasticsearch:7.6.2
     build: .
     container_name: es01
     environment:
@@ -22,7 +21,6 @@ services:
     networks:
       - elastic
   es02:
-    #image: docker.elastic.co/elasticsearch/elasticsearch:7.6.2
     build: .
     container_name: es02
     environment:
@@ -41,7 +39,6 @@ services:
     networks:
       - elastic
   es03:
-    #image: docker.elastic.co/elasticsearch/elasticsearch:7.6.2
     build: .
     container_name: es03
     environment:
