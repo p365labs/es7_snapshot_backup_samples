@@ -1,5 +1,9 @@
 # Elasticsearch Snapshot backup samples
 
+This repository contains some files to prove what
+discussed into the tutorial you can find 
+[https://medium.com/@federicopanini/elasticsearch7-backup-snapshot-restore-aws-s3-54a581c75589](https://medium.com/@federicopanini/elasticsearch7-backup-snapshot-restore-aws-s3-54a581c75589)
+
 The idea is to setup an Elasticsearch cluster with Docker. A specific docker-compose file has been created to set it up a Cluster with 3 nodes.
 
 Then you can play with the cluster and test what has been explained into the
