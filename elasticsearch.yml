@@ -1,0 +1,5 @@
+cluster.name: "docker-cluster"
+network.host: 0.0.0.0
+
+
+s3.client.default.endpoint: s3-eu-west-1.amazonaws.com
